@@ -95,6 +95,8 @@ const characters = [
 let passwordBtn = document.getElementById("password-btn");
 let passwordBox1 = document.getElementById("password-box1");
 let passwordBox2 = document.getElementById("password-box2");
+let copyBtn1 = document.getElementById("copy-btn1")
+let copyBtn2 = document.getElementById("copy-btn2")
 
 
 function generatePassword(length) {
@@ -111,34 +113,21 @@ passwordBtn.addEventListener("click", function () {
   let password2 = generatePassword(12); // Generate another 12-character password
   passwordBox1.textContent = password1;
   passwordBox2.textContent = password2;
+  copyBtn1.textContent = "Copy Password"
+  copyBtn2.textContent = "Copy Password"
 });
 
 function copyPasswordOne() {
- // Get the text input element
  let passwordValOne = passwordBox1.textContent
 console.log(passwordValOne)
-
- // Use the Clipboard API to copy the text 
  navigator.clipboard.writeText(passwordValOne)
- /*   .then(() => {
-     alert(`${passwordValOne} copied to clipboard!`);
-   })
-   .catch(err => {
-     console.error('Failed to copy text: ', err);
-   }); */
+ copyBtn1.textContent = "Copied!"
+
 }
 
 function copyPasswordTwo() {
- // Get the text input element
  let passwordValTwo = passwordBox2.textContent
 console.log(passwordValTwo)
-
- // Use the Clipboard API to copy the text 
  navigator.clipboard.writeText(passwordValTwo)
-/*    .then(() => {
-     alert(`${passwordValTwo} copied to clipboard!`);
-   })
-   .catch(err => {
-     console.error('Failed to copy text: ', err);
-   }); */
+ copyBtn2.textContent = "Copied!"
 }
