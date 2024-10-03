@@ -70,6 +70,7 @@ span {
 .child-2 {
   display: flex;
   justify-content: space-evenly;
+
 }
 
 .password-box {
@@ -105,22 +106,22 @@ span {
 
 /* Media queries for better responsiveness */
 
-@media (max-width: 320px) {
-  h1 {
-    font-size: 60px;
-  }
-}
-
-@media (min-width: 680px) {
+/* @media (min-width:321) and (max-width:700) {
   .parent {
-    height: 70%;
+    background-color: black;
+    }
+} */
+
+@media (min-width: 668px) {
+  .parent {
+    height: 90%;
     width: 90%;
   }
   h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   p {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   #password-btn {
@@ -133,16 +134,23 @@ span {
     height: 35px;
     margin-top: 100px;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     text-wrap: wrap;
+    overflow: hidden;
     border-radius: 9px;
   }
 
   .copy-btn {
     padding: 5px 40px 5px 40px;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 60px;
   }
 }
 
