@@ -120,12 +120,12 @@ console.log(passwordValOne)
 
  // Use the Clipboard API to copy the text 
  navigator.clipboard.writeText(passwordValOne)
-   .then(() => {
+ /*   .then(() => {
      alert(`${passwordValOne} copied to clipboard!`);
    })
    .catch(err => {
      console.error('Failed to copy text: ', err);
-   });
+   }); */
 }
 
 function copyPasswordTwo() {
@@ -135,10 +135,10 @@ console.log(passwordValTwo)
 
  // Use the Clipboard API to copy the text 
  navigator.clipboard.writeText(passwordValTwo)
-   .then(() => {
+/*    .then(() => {
      alert(`${passwordValTwo} copied to clipboard!`);
    })
    .catch(err => {
      console.error('Failed to copy text: ', err);
-   });
+   }); */
 }

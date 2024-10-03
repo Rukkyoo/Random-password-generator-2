@@ -7,6 +7,109 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.parent{
+  background-color: #273549;
+  height: 70%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 20px;
+  border: 10px solid white;
+}
+
+
+h1{
+  font-size: 10vw;
+  color: white;
+}
+
+p {
+  font-size: 5vw;
+  color: white;
+}
+
+span {
+  color: #10b981;
+}
+
+#password-btn {
+  background-color: #10b981;
+  color: white;
+  padding: 15px 70px 15px 70px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+#password-btn:hover {
+  background-color: #aee4d2;
+  color: #273549;
+  transition-duration: 0.3s;
+}
+
+.child-2-1{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0;
+  gap: 20px;
+}
+.child-2-2{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.password-box{
+  width: 100vw;
+  background-color: #6b7280;
+  color: #10b981;
+  padding: 15px 0px 15px 0px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+}
+.copy-btn{
+  width: 100vw;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 0px 10px 0px;
+  font-size: 30px;
+}
+
+@media (min-width:750px) {
+  h1{
+    font-size: 3vw;
+  }
+  
+  p {
+    font-size: 2vw;
+  }
+
+  #password-btn{
+    font-size: 15px;
+    padding: 10px 50px 10px 50px;
+  }
+
+  .password-box{
+    font-size: 20;
+  }
+
+  .copy-btn{
+    width: 100vw;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 0px 5px 0px;
+    font-size: 20px;
+  }
+}
+/* 
 .parent {
   background-color: white;
   height: 70%;
@@ -102,7 +205,7 @@ span {
   background-color: rgb(174, 228, 210);
   color: #273549;
   transition-duration: 0.3s;
-}
+} */
 
 /* Media queries for better responsiveness */
 
@@ -112,7 +215,7 @@ span {
     }
 } */
 
-@media (min-width: 668px) {
+/* @media (min-width: 668px) {
   .parent {
     height: 90%;
     width: 90%;
@@ -153,7 +256,7 @@ span {
     font-size: 60px;
   }
 }
-
+ */
 /* @media (max-width: 481px) {
     .parent {
       background-color: white;
